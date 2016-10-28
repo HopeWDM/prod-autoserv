@@ -21,6 +21,9 @@
 			function disableAutoOff() {
 				httpGet('http://prod-autoserv.hopewdm.org/cgi-bin/disable_auto-off.sh');
 			}
+			function archiveLog() {
+				httpGet('http://prod-autoserv.hopewdm.org/cgi-bin/archive-log.sh');
+			}
 		</script>
 	</head>
 
@@ -55,6 +58,17 @@
 				</td>
 				<td class="table-buttons">
 					<a class="common simple yellow width-80" onclick="setTimeout(disableAutoOff, 1000);">Click to DISABLE auto-off functions entirely</a>
+				</td>
+			</tr>
+			<tr class="table-buttons">
+				<td class="table-buttons">
+					<br>
+				</td>
+				<td class="table-buttons">
+					<a class="common simple yellow width-80" onclick="setTimeout(, 1000);">Click to ARCHIVE log file.</a>
+				</td>
+				<td class="table-buttons">
+					<br>
 				</td>
 			</tr>
 		</table>
