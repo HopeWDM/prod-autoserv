@@ -30,6 +30,17 @@
 00 02 * * * /opt/scripts/projector-automation/auto-off.pl
 ## ------------------------------
 
+## GS TV OFF COMMAND
+00 22 * * * /opt/scripts/projector-automation/tv_auto-off.pl
+## ------------------------------
+
+## GS TV ON COMMAND
+00 06 * * * /opt/scripts/projector-automation/tv_auto-on.pl
+## ------------------------------
+
+
+
+
 
 ## Wednesday PowerLife
 50 17 * * wed /opt/scripts/kipro-automation/record.sh
