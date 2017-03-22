@@ -8,7 +8,7 @@ use warnings;
 
 our @data;
 
-sub doFileRead() {
+sub doFileRead {
 		open (my $fh, "<", "/var/www/html/javascript/auto-off.js")
 				or die "Failed to open file $!\n";
 
@@ -19,3 +19,4 @@ sub doFileRead() {
 				if ($x =~ m/disabled/) { system('/opt/scripts/projector-automation/no_auto-off.sh'); }
 		}
 }
+doFileRead;
