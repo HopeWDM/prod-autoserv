@@ -35,7 +35,7 @@
 ## ------------------------------
 
 ## GS TV ON COMMAND
-00 06 * * * /opt/scripts/projector-automation/tv_auto-on.pl
+00 06 * * * /opt/scripts/projector-automation/tv_auto-on.sh
 ## ------------------------------
 
 
