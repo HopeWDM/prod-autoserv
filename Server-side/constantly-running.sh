@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# this file should live at:
+# /opt/scripts/display-status/constantly-running.sh
+
+
 i="0"
 
 while [ $i -eq 0 ]
