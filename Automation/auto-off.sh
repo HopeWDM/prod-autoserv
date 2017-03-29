@@ -29,8 +29,8 @@ wget -o /dev/null -O /dev/null "http://10.40.30.75/file.html?cmd=W04RS|C01%0D"
 # Chapel:
 # -----
 
-# foldbackSide / Sanyo
-wget -o /dev/null -O /dev/null "http://10.40.30.70/file.html?cmd=W03RS|C01%0D"
+# foldbackSide / lgTV
+wget -o /dev/null -O /dev/null "http://10.40.30.70/file.html?cmd=W04RS|ka%200%2000%0D"
 
 # mainSide / Panasonic
 wget -o /dev/null -O /dev/null "http://10.40.30.70/file.html?cmd=W01RS|%02POF%03"
