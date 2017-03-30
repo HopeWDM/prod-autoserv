@@ -106,6 +106,7 @@ sub parseLine {
 	my $data = shift;
 	# split out the line from Extron box
 	my ($proj,$item,$type,$value) = split /,/, $data;
+	# truncates whitespace from $value
 	$value =~ s/\s+$//;
 	# determine what item (power, lamp hours, etc) we're
 	# looking at, and act upon it.
@@ -140,6 +141,18 @@ sub parseLine {
 						else {
 							$power = 'some sort of error has occured';
 							#errorWrapper($power);
+						}
+					}
+				}
+			}
+			else {
+				if ($type =~ m/lgTV/) {
+					if ($value =~ m/01/) {
+						$power = 'on';
+					}
+					else {
+						if ($value =~ m/00/) {
+							$power = 'off';
 						}
 					}
 				}
