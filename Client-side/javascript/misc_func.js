@@ -213,7 +213,12 @@ function statusDot(sdVal) { // "sd" = "status dot"
 				return sdBLUE;
 			}
 			else {
-				return sdORANGE;
+				if (sdVAl == "no response") {
+					return sdGRAY;
+				}
+				else {
+					return sdORANGE;
+				}
 			}
 		}
 	}
