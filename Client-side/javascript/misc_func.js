@@ -59,6 +59,7 @@ var rm214_mainCenter_indicator = 'GEEK_ERR';
 var rm216_mainCenter_indicator = 'GEEK_ERR';
 
 var sdBLUE = '<img src="graphics/blue-dot.png" alt="blue-dot">';
+var sdGRAY = '<img src="graphics/gray-dot.png" alt="gray-dot">';
 var sdGREEN = '<img src="graphics/green-dot.png" alt="green-dot">';
 var sdORANGE = '<img src="graphics/flashing-orange.gif" alt="warning/error">';
 var sdRED = '<img src="graphics/red-dot.png" alt="red-dot">';
