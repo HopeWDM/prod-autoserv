@@ -27,15 +27,15 @@
 
 
 ## PROJECTORS MIDNIGHT OFF COMMAND
-00 02 * * * /opt/scripts/projector-automation/auto-off.pl
+00 02 * * * /opt/scripts/display-automation/auto-off.pl
 ## ------------------------------
 
 ## GS TV OFF COMMAND
-00 22 * * * /opt/scripts/projector-automation/tv_auto-off.pl
+00 22 * * * /opt/scripts/display-automation/tv_auto-off.pl
 ## ------------------------------
 
 ## GS TV ON COMMAND
-00 06 * * * /opt/scripts/projector-automation/tv_auto-on.sh
+00 06 * * * /opt/scripts/display-automation/tv_auto-on.sh
 ## ------------------------------
 
 
