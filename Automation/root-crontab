@@ -25,6 +25,9 @@
 # m h  dom mon dow   command
 
 
+## Keeps "constantly-running.sh" .... well, running.
+00 * * * * /opt/scripts/display-status/run-constantly-running.sh
+
 
 ## PROJECTORS MIDNIGHT OFF COMMAND
 00 02 * * * /opt/scripts/display-automation/auto-off.pl
