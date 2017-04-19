@@ -1,7 +1,7 @@
 #!/usr/bin/perl -W
 
 # location:
-# /opt/scripts/projector-automation/run_auto-off.sh
+# /opt/scripts/display-automation/run_auto-off.sh
 
 use strict;
 use warnings;
@@ -15,7 +15,7 @@ sub doFileRead() {
 		while (my $x = <$fh>) {
 				# cut off the trailing newline
 				chomp $x;
-				if ($x =~ m/enabled/) { system('/opt/scripts/projector-automation/run_tv_auto-off.sh'); }
-				if ($x =~ m/disabled/) { system('/opt/scripts/projector-automation/no_tv_auto-off.sh'); }
+				if ($x =~ m/enabled/) { system('/opt/scripts/display-automation/run_tv_auto-off.sh'); }
+				if ($x =~ m/disabled/) { system('/opt/scripts/display-automation/no_tv_auto-off.sh'); }
 		}
 }
