@@ -26,7 +26,7 @@
 
 
 ## Keeps "constantly-running.sh" .... well, running.
-00 * * * * /opt/scripts/display-status/run-constantly-running.sh
+58 * * * * /opt/scripts/display-status/run-constantly-running.sh
 
 
 ## PROJECTORS MIDNIGHT OFF COMMAND
@@ -50,7 +50,7 @@
 15 20 * * wed /opt/scripts/kipro-automation/stop.sh
 
 ## Wednesday Ignition
-19 20 * * wed /opt/scripts/kipro-automation/record.sh
+18 20 * * wed /opt/scripts/kipro-automation/record.sh
 30 21 * * wed /opt/scripts/kipro-automation/stop.sh
 
 ## Thursday CR
@@ -143,7 +143,7 @@
 
 
 # VBS - Morning Opening
-# 10 09 * * mon-fri /opt/scripts/kipro-automation/record.sh
+# 55 08 * * mon-fri /opt/scripts/kipro-automation/record.sh
 # 00 10 * * mon-fri /opt/scripts/kipro-automation/stop.sh
 
 # VBS - Morning Closing
@@ -179,58 +179,58 @@
 
 
 # Manudy Thursday
- 45 11 13 04 thu /opt/scripts/kipro-automation/record.sh
- 20 13 13 04 thu /opt/scripts/kipro-automation/stop.sh
+# 45 11 13 04 thu /opt/scripts/kipro-automation/record.sh
+# 20 13 13 04 thu /opt/scripts/kipro-automation/stop.sh
 
 # 00 17 13 04 thu /opt/scripts/kipro-automation/record.sh
 # 35 18 13 04 thu /opt/scripts/kipro-automation/stop.sh
 
- 45 18 13 04 thu /opt/scripts/kipro-automation/record.sh
- 20 20 13 04 thu /opt/scripts/kipro-automation/stop.sh
+# 45 18 13 04 thu /opt/scripts/kipro-automation/record.sh
+# 20 20 13 04 thu /opt/scripts/kipro-automation/stop.sh
 
 
 # Good Friday
- 45 11 14 04 fri /opt/scripts/kipro-automation/record.sh
- 20 13 14 04 fri /opt/scripts/kipro-automation/stop.sh
+# 45 11 14 04 fri /opt/scripts/kipro-automation/record.sh
+# 20 13 14 04 fri /opt/scripts/kipro-automation/stop.sh
 
 # 00 17 14 04 fri /opt/scripts/kipro-automation/record.sh
 # 35 18 14 04 fri /opt/scripts/kipro-automation/stop.sh
 
- 45 18 14 04 fri /opt/scripts/kipro-automation/record.sh
- 20 20 14 04 fri /opt/scripts/kipro-automation/stop.sh
+# 45 18 14 04 fri /opt/scripts/kipro-automation/record.sh
+# 20 20 14 04 fri /opt/scripts/kipro-automation/stop.sh
 
 
 # Easter Eve
 
- 40 12 15 04 sat /opt/scripts/kipro-automation/record.sh
- 38 14 15 04 sat /opt/scripts/kipro-automation/stop.sh
+# 40 12 15 04 sat /opt/scripts/kipro-automation/record.sh
+# 38 14 15 04 sat /opt/scripts/kipro-automation/stop.sh
 
- 40 14 15 04 sat /opt/scripts/kipro-automation/record.sh
- 38 16 15 04 sat /opt/scripts/kipro-automation/stop.sh
+# 40 14 15 04 sat /opt/scripts/kipro-automation/record.sh
+# 38 16 15 04 sat /opt/scripts/kipro-automation/stop.sh
 
- 40 16 15 04 sat /opt/scripts/kipro-automation/record.sh
- 38 18 15 04 sat /opt/scripts/kipro-automation/stop.sh
+# 40 16 15 04 sat /opt/scripts/kipro-automation/record.sh
+# 38 18 15 04 sat /opt/scripts/kipro-automation/stop.sh
 
- 40 18 15 04 sat /opt/scripts/kipro-automation/record.sh
- 38 20 15 04 sat /opt/scripts/kipro-automation/stop.sh
+# 40 18 15 04 sat /opt/scripts/kipro-automation/record.sh
+# 38 20 15 04 sat /opt/scripts/kipro-automation/stop.sh
 
 
 # Easter
 
- 40 06 16 04 sun /opt/scripts/kipro-automation/record.sh
- 38 08 16 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 06 16 04 sun /opt/scripts/kipro-automation/record.sh
+# 38 08 16 04 sun /opt/scripts/kipro-automation/stop.sh
 
- 40 08 16 04 sun /opt/scripts/kipro-automation/record.sh
- 38 10 16 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 08 16 04 sun /opt/scripts/kipro-automation/record.sh
+# 38 10 16 04 sun /opt/scripts/kipro-automation/stop.sh
 
- 40 10 16 04 sun /opt/scripts/kipro-automation/record.sh
- 38 12 16 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 10 16 04 sun /opt/scripts/kipro-automation/record.sh
+# 38 12 16 04 sun /opt/scripts/kipro-automation/stop.sh
 
 # 40 14 16 04 sun /opt/scripts/kipro-automation/record.sh
 # 38 16 16 04 sun /opt/scripts/kipro-automation/stop.sh
 
- 40 16 16 04 sun /opt/scripts/kipro-automation/record.sh
- 38 18 16 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 16 16 04 sun /opt/scripts/kipro-automation/record.sh
+# 38 18 16 04 sun /opt/scripts/kipro-automation/stop.sh
 
 
 
