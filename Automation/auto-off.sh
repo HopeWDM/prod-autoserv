@@ -3,6 +3,24 @@
 # location:
 # /opt/scripts/projector-automation/auto-off.sh
 
+# -----
+# Worship Center
+# -----
+
+# mainLeft / Panasonic
+wget -o /dev/null -O /dev/null "http://10.40.30.81/cgi-bin/cgi.pl?cmd=%02POF%03"
+
+# mainRight / Panasonic
+wget -o /dev/null -O /dev/null "http://10.40.30.82/cgi-bin/cgi.pl?cmd=%02POF%03"
+
+# Foldback Left / Sanyo
+wget -o /dev/null -O /dev/null "http://10.40.30.83/cgi-bin/cgi.pl?cmd=C01%0D"
+
+# Foldback Right / Sanyo
+wget -o /dev/null -O /dev/null "http://10.40.30.84/cgi-bin/cgi.pl?cmd=C01%0D"
+
+# centerCenter / Panasonic
+wget -o /dev/null -O /dev/null "http://10.40.30.95/cgi-bin/cgi.pl?cmd=%02POF%03"
 
 # -----
 # Bridge
