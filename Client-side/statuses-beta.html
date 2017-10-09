@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>Status page - beta</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet/common_styles-file.css">
+		<!--<script type="text/javascript" src="javascript/autorefresh.js"></script>//-->
+		<!-- make sure to update the JS file "misc_func.js", such that it
+		continues to load the "status_vars.js" file! //-->
+		<script type="text/javascript" src="javascript/misc_func.js"></script>
+	</head>
+
+	<body class="bg-black" onload="goForth();">
+		<div>
+<!--
+			<a class="common tiny" onclick="goBack();">Back</a>
+//-->
+			<img src="graphics/logo.png" width="225" height="150" alt="Production Logo">
+		</div>
+		<table class="bc full-widthx table-align-center">
+			<tr class="table-no-buttons-no-border">
+				<td colspan="4">
+					<span class="arial-big light-gray">Statuses:</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<br><br><br><br>
+				</td>
+			</tr>
+			<tr class="table-no-buttons">
+				<td colspan="4" class="table-no-buttons">
+					<span class="simple-no-buttons">Bridge projectors</span>
+				</td>
+			</tr>
+			<!-- WC Main HL -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Main HL</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_mainHL_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_mainHL_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_mainHL_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- WC Main HR -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<a class="simple-no-buttons">Main HR</a>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_mainHR_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_mainHR_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_mainHR_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- WC Catwalk 01 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">WC Catwalk 01</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk01_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk01_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk01_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- WC Catwalk 02 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">WC Catwalk 02</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk02_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk02_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk02_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- WC Catwalk 03 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">WC Catwalk 03</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk03_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk03_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_catwalk03_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- WC Foldback HL -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Foldback HL</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_foldbackHL_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_foldbackHL_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_foldbackHL_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- WC Foldback HR -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Foldback HR</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_foldbackHR_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_foldbackHR_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="wc_foldbackHR_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<br><br>
+				</td>
+			</tr>
+			<tr class="table-no-buttons">
+				<td colspan="4" class="table-no-buttons">
+					<span class="simple-no-buttons">Bridge projectors</span>
+				</td>
+			</tr>
+			<!-- Bridge Main Left -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Main Left</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainLeft_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainLeft_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainLeft_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Bridge Main Right -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<a class="simple-no-buttons">Main Right</a>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainRight_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainRight_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainRight_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Bridge Main Center -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Main Center</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainCenter_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainCenter_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Bridge Foldback Center -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Foldback Center</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_foldbackCenter_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_foldbackCenter_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="bridge_foldbackCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<br><br>
+				</td>
+			</tr>
+			<tr class="table-no-buttons">
+				<td colspan="4" class="table-no-buttons">
+					<span class="simple-no-buttons">Chapel projectors</span>
+				</td>
+			</tr>
+			<!-- Chapel Main Side -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Main Side</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_mainSide_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_mainSide_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_mainSide_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Chapel Main Center -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<a class="simple-no-buttons">Main Center</a>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_mainCenter_power">ON</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_mainCenter_hours">1234, 0900, 0, 0</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Chapel Foldback Side -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Foldback Side</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_foldbackSide_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_foldbackSide_hours">1234, 0, 0, 0</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="chapel_foldbackSide_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<br><br><br><br>
+				</td>
+			</tr>
+			<tr class="table-no-buttons">
+				<td colspan="4" class="table-no-buttons">
+					<span class="simple-no-buttons">Gym projectors</span>
+				</td>
+			</tr>
+			<!-- Gym Main Side -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Main Side</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="gym_mainSide_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="gym_mainSide_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="gym_mainSide_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<br><br><br><br>
+				</td>
+			</tr>
+			<tr class="table-no-buttons">
+				<td colspan="4" class="table-no-buttons">
+					<span class="simple-no-buttons">Well projectors</span>
+				</td>
+			</tr>
+			<!-- Well Main Center -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Main Center</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="well_mainCenter_power">OFF</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="well_mainCenter_hours">1234, 1234, 1212, 0900</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="well_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<br><br><br><br>
+				</td>
+			</tr>
+			<tr class="table-no-buttons">
+				<td colspan="4" class="table-no-buttons">
+					<span class="simple-no-buttons">Classroom projectors</span>
+				</td>
+			</tr>
+			<!-- Room RR1 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room RR1</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rmRR1_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rmRR1_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rmRR1_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 128 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 128</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm128_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm128_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm128_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 101A -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 101A</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm101A_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm101A_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm101A_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 101C -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 101C</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm101C_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm101C_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm101C_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 102 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 102</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm102_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm102_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm102_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 104 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 104</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm104_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm104_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm104_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 212 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 212</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm212_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm212_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm212_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 214 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 214</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm214_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm214_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm214_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<!-- Room 216 -->
+			<tr class="table-no-buttons">
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons">Room 216</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm216_mainCenter_power">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm216_mainCenter_hours">geek_err</span>
+				</td>
+				<td class="table-no-buttons">
+					<span class="simple-no-buttons" id="rm216_mainCenter_indicator">[ status dot ]</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4">
+					<br><br>
+				</td>
+			</tr>
+		</table>
+
+	</body>
+	
+</html>

@@ -1,4 +1,11 @@
 // power
+var wc_mainHL_power = 'GEEK_ERR';
+var wc_mainHR_power = 'GEEK_ERR';
+var wc_catwalk01_power = 'GEEK_ERR';
+var wc_catwalk02_power = 'GEEK_ERR';
+var wc_catwalk03_power = 'GEEK_ERR';
+var wc_foldbackHL_power = 'GEEK_ERR';
+var wc_foldbackHR_power = 'GEEK_ERR';
 var bridge_mainLeft_power = 'GEEK_ERR';
 var bridge_mainRight_power = 'GEEK_ERR';
 var bridge_mainCenter_power = 'GEEK_ERR';
@@ -19,6 +26,13 @@ var rm214_mainCenter_power = 'GEEK_ERR';
 var rm216_mainCenter_power = 'GEEK_ERR';
 
 // hours
+var wc_mainHL_hours = 'GEEK_ERR';
+var wc_mainHR_hours = 'GEEK_ERR';
+var wc_catwalk01_hours = 'GEEK_ERR';
+var wc_catwalk02_hours = 'GEEK_ERR';
+var wc_catwalk03_hours = 'GEEK_ERR';
+var wc_foldbackHL_hours = 'GEEK_ERR';
+var wc_foldbackHR_hours = 'GEEK_ERR';
 var bridge_mainLeft_hours = 'GEEK_ERR';
 var bridge_mainRight_hours = 'GEEK_ERR';
 var bridge_mainCenter_hours = 'GEEK_ERR';
@@ -39,6 +53,13 @@ var rm214_mainCenter_hours = 'GEEK_ERR';
 var rm216_mainCenter_hours = 'GEEK_ERR';
 
 // indicator
+var wc_mainHL_hours = 'GEEK_ERR';
+var wc_mainHR_hours = 'GEEK_ERR';
+var wc_catwalk01_hours = 'GEEK_ERR';
+var wc_catwalk02_hours = 'GEEK_ERR';
+var wc_catwalk03_hours = 'GEEK_ERR';
+var wc_foldbackHL_hours = 'GEEK_ERR';
+var wc_foldbackHR_hours = 'GEEK_ERR';
 var bridge_mainLeft_indicator = 'GEEK_ERR';
 var bridge_mainRight_indicator = 'GEEK_ERR';
 var bridge_mainCenter_indicator = 'GEEK_ERR';
@@ -94,6 +115,13 @@ function runThings() {
 
 function replaceInnerHTML() {
 	/* Power statuses */
+	document.getElementById("wc_mainHL_power").innerHTML = wc_mainHL_power;
+	document.getElementById("wc_mainHR_power").innerHTML = wc_mainHR_power;
+	document.getElementById("wc_catwalk01_power").innerHTML = wc_catwalk01_power;
+	document.getElementById("wc_catwalk02_power").innerHTML = wc_catwalk02_power;
+	document.getElementById("wc_catwalk03_power").innerHTML = wc_catwalk03_power;
+	document.getElementById("wc_foldbackHL_power").innerHTML = wc_foldbackHL_power;
+	document.getElementById("wc_foldbackHR_power").innerHTML = wc_foldbackHR_power;
 	document.getElementById("bridge_mainLeft_power").innerHTML = bridge_mainLeft_power;
 	document.getElementById("bridge_mainRight_power").innerHTML = bridge_mainRight_power;
 	document.getElementById("bridge_mainCenter_power").innerHTML = bridge_mainCenter_power;
@@ -114,6 +142,13 @@ function replaceInnerHTML() {
 	document.getElementById("rm216_mainCenter_power").innerHTML = rm216_mainCenter_power;
 	
 	/* Hours times */
+	document.getElementById("wc_mainHL_hours").innerHTML = wc_mainHL_hours;
+	document.getElementById("wc_mainHR_hours").innerHTML = wc_mainHR_hours;
+	document.getElementById("wc_catwalk01_hours").innerHTML = wc_catwalk01_hours;
+	document.getElementById("wc_catwalk02_hours").innerHTML = wc_catwalk02_hours;
+	document.getElementById("wc_catwalk03_hours").innerHTML = wc_catwalk03_hours;
+	document.getElementById("wc_foldbackHL_hours").innerHTML = wc_foldbackHL_hours;
+	document.getElementById("wc_foldbackHR_hours").innerHTML = wc_foldbackHR_hours;
 	document.getElementById("bridge_mainLeft_hours").innerHTML = bridge_mainLeft_hours;
 	document.getElementById("bridge_mainRight_hours").innerHTML = bridge_mainRight_hours;
 	document.getElementById("bridge_mainCenter_hours").innerHTML = bridge_mainCenter_hours;
@@ -134,6 +169,13 @@ function replaceInnerHTML() {
 	document.getElementById("rm216_mainCenter_hours").innerHTML = rm216_mainCenter_hours;
 
 	/* Status indicators */
+	document.getElementById("wc_mainHL_indicator").innerHTML = wc_mainHL_indicator;
+	document.getElementById("wc_mainHR_indicator").innerHTML = wc_mainHR_indicator;
+	document.getElementById("wc_catwalk01_indicator").innerHTML = wc_catwalk01_indicator;
+	document.getElementById("wc_catwalk02_indicator").innerHTML = wc_catwalk02_indicator;
+	document.getElementById("wc_catwalk03_indicator").innerHTML = wc_catwalk03_indicator;
+	document.getElementById("wc_foldbackHL_indicator").innerHTML = wc_foldbackHL_indicator;
+	document.getElementById("wc_foldbackHR_indicator").innerHTML = wc_foldbackHR_indicator;
 	document.getElementById("bridge_mainLeft_indicator").innerHTML = bridge_mainLeft_indicator;
 	document.getElementById("bridge_mainRight_indicator").innerHTML = bridge_mainRight_indicator;
 	document.getElementById("bridge_mainCenter_indicator").innerHTML = bridge_mainCenter_indicator;
@@ -170,6 +212,15 @@ var indicatorStrings = [
 */
 
 function powerToStatusDot() {
+	/* Worship Center */
+	wc_mainHL_indicator = statusDot(wc_mainHL_power);
+	wc_mainHR_indicator = statusDot(wc_mainHR_power);
+	wc_catwalk01_indicator = statusDot(wc_catwalk01_power);
+	wc_catwalk02_indicator = statusDot(wc_catwalk02_power);
+	wc_catwalk03_indicator = statusDot(wc_catwalk03_power);
+	wc_foldbackHL_indicator = statusDot(wc_foldbackHL_power);
+	wc_foldbackHR_indicator = statusDot(wc_foldbackHR_power);
+
 	/* Bridge */
 	bridge_mainLeft_indicator = statusDot(bridge_mainLeft_power);
 	bridge_mainRight_indicator = statusDot(bridge_mainRight_power);
