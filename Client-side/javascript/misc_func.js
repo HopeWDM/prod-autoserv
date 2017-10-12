@@ -265,7 +265,7 @@ function statusDot(sdVal) { // "sd" = "status dot"
 				return sdBLUE;
 			}
 			else {
-				if (sdVAl == "no response") {
+				if (sdVal == "no response") {
 					return sdGRAY;
 				}
 				else {
