@@ -103,7 +103,7 @@ function goForth() {
 }
 
 function doStuffOverAndOver() {
-	LoadMyJs('http://prod-autoserv.hopewdm.org/javascript/status_vars.js');
+	LoadMyJs('http://prod-autoserv.hopewdm.org/javascript-beta/status_vars.js');
 	readVars();
 	runThings();
 }
@@ -265,7 +265,7 @@ function statusDot(sdVal) { // "sd" = "status dot"
 				return sdBLUE;
 			}
 			else {
-				if (sdVAl == "no response") {
+				if (sdVal == "no response") {
 					return sdGRAY;
 				}
 				else {
@@ -275,4 +275,3 @@ function statusDot(sdVal) { // "sd" = "status dot"
 		}
 	}
 }
-	
