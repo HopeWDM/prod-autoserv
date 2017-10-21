@@ -7,18 +7,18 @@ use Switch;
 # for use with "prod-autoserv".
 
 sub getData {
-        system('/opt/scripts/display-status/getter.sh');
+       system('/opt/scripts/display-status/getter2.sh');
 }
 
 
 #***********************
 # ACTING AS ONE NOW THAT WE'VE GOT PITRONS
 #***********************
-{
+#{
 	# 0. have "getter" get stuff, before this script runs
 	# 1. Get variables ready
 	# 2. Read everything in
-}
+#}
 # 3. Make sure there's no %02 or %03
 # 4. Put it all in array @data
 # 5. Go line-by-line and grab statuses
