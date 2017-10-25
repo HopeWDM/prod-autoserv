@@ -25,8 +25,8 @@ panasonicLAMP4='%02Q$L:4%03'
 
 wcMainHL='http://10.40.30.81/cgi-bin/raw.pl?cmd='
 wcMainHR='http://10.40.30.82/cgi-bin/raw.pl?cmd='
-wcFoldbackHL='http://10.40.30.x/cgi-bin/raw.pl?cmd='
-wcFoldbackHR='http://10.40.30.x/cgi-bin/raw.pl?cmd='
+wcFoldbackHL='http://10.40.30.83/cgi-bin/foldback.pl?cmd='
+wcFoldbackHR='http://10.40.30.84/cgi-bin/foldback.pl?cmd='
 
 #wget -O bridge-raw.txt http://10.40.30.75/bridge_status.html
 #wget -O chapel-raw.txt http://10.40.30.70/chapel_status.html
@@ -62,10 +62,31 @@ echo wc_mainHR,$panasonic_lamps\
 	`curl $wcMainHR$panasonicLAMP1`\
 	`curl $wcMainHR$panasonicLAMP2` >> wcProjs.txt
 
+# WC Foldback House Left
+echo wc_foldbackHL,$sanyo_power\
+	`curl $wcFoldbackHL$sanyoPWR` >> wcProjs.txt
+echo wc_foldbackHL,$sanyo_lamps\
+	`curl $wcFoldbackHL$sanyoLAMPS` >> wcProjs.txt
 
+# WC Foldback House Right
+echo wc_foldbackHR,$sanyo_power\
+	`curl $wcFoldbackHR$sanyoPWR` >> wcProjs.txt
+echo wc_foldbackHR,$sanyo_lamps\
+	`curl $wcFoldbackHR$sanyoLAMPS` >> wcProjs.txt
+
+
+# strip some of the goofy characters at
+# the beginning of some of these things
 sed -i 's/[^[:print:]]//g' wcProjs.txt
+
+# remove spaces after commas
 sed -i 's/, /,/g' wcProjs.txt
+
+# finally, now that we're done fiddling,
+# move file to where it needs to be for
+# the status page to get the data.
 mv wcProjs.txt wc-raw.txt
 
 cat /opt/data/projstatus/*-raw.txt | grep , | sed s/'%02'//g | sed s/'%03'//g | sed s/'%0D'//g | sed s/'%0A'//g > dumpstatus.txt
 #cat /opt/data/projstatus/*-raw.txt | grep , > dumpstatus.txt
+
