@@ -163,7 +163,7 @@ sub parseLine {
                                                         $power = 'in-between';
                                                 }
                                                 else {
-                                                        $power = 'some sort of error has occured';
+                                                        $power = 'some sort of error has occured '.$value;
                                                         #errorWrapper($power);
                                                 }
                                         }
@@ -312,12 +312,12 @@ sub printer {
         print 'bridge_foldbackCenter_hours = ';
         printStuff(
                 $bridge_foldbackCenter{$h1}
-                .$cs.
-                $bridge_foldbackCenter{$h2}
-#               .$cs.
-#               $bridge_foldbackCenter{$h3}
-#               .$cs.
-#               $bridge_foldbackCenter{$h4}
+#		.$cs.
+#		$bridge_foldbackCenter{$h2}
+#		.$cs.
+#		$bridge_foldbackCenter{$h3}
+#		.$cs.
+#		$bridge_foldbackCenter{$h4}
         );
 
         print 'chapel_mainSide_power = ';
@@ -389,9 +389,9 @@ sub printer {
         printStuff($wc_mainHL{'power'});
         print 'wc_mainHL_hours = ';
         printStuff(
-                $wc_mainHL{$h1}
-#               .$cs.
-#               $wc_mainHL{$h2}
+		$wc_mainHL{$h1}
+		.$cs.
+		$wc_mainHL{$h2}
 #               .$cs.
 #               $wc_mainHL{$h3}
 #               .$cs.
@@ -402,9 +402,9 @@ sub printer {
         printStuff($wc_mainHR{'power'});
         print 'wc_mainHR_hours = ';
         printStuff(
-                $wc_mainHR{$h1}
-#               .$cs.
-#               $wc_mainHR{$h2}
+		$wc_mainHR{$h1}
+		.$cs.
+		$wc_mainHR{$h2}
 #               .$cs.
 #               $wc_mainHR{$h3}
 #               .$cs.
