@@ -60,8 +60,8 @@
 
 
 ## Saturday services
-50 16 * * sat /opt/scripts/kipro-automation/record.sh
-23 18 * * sat /opt/scripts/kipro-automation/stop.sh
+#50 16 * * sat /opt/scripts/kipro-automation/record.sh
+#23 18 * * sat /opt/scripts/kipro-automation/stop.sh
 
 
 
@@ -89,53 +89,60 @@
 
 #######
 ###
-### Christmas Eve services
+### Christmas services
 ###
 
-# Services on 2016-12-22 (Thursday - Eve Eve Eve)
+# Services on 2017-12-22 (Friday - Eve Eve Eve)
 
-# 35 16 22 12 thu /opt/scripts/kipro-automation/record.sh
-# 30 18 22 12 thu /opt/scripts/kipro-automation/stop.sh
-
-
-# Services on 2016-12-23 (Friday - Eve Eve)
-
-# 35 14 23 12 fri /opt/scripts/kipro-automation/record.sh
-# 30 16 23 12 fri /opt/scripts/kipro-automation/stop.sh
-
-# 35 16 23 12 fri /opt/scripts/kipro-automation/record.sh
-# 30 18 23 12 fri /opt/scripts/kipro-automation/stop.sh
-
-# 35 18 23 12 fri /opt/scripts/kipro-automation/record.sh
-# 30 20 23 12 fri /opt/scripts/kipro-automation/stop.sh
+35 16 22 12 fri /opt/scripts/kipro-automation/record.sh
+40 18 22 12 fri /opt/scripts/kipro-automation/stop.sh
 
 
-# Services on 2016-12-24 (Saturday - Eve)
+# Services on 2017-12-23 (Saturday - Eve Eve)
 
-# 38 10 24 12 sat /opt/scripts/kipro-automation/record.sh
-# 35 12 24 12 sat /opt/scripts/kipro-automation/stop.sh
+35 14 23 12 sat /opt/scripts/kipro-automation/record.sh
+40 16 23 12 sat /opt/scripts/kipro-automation/stop.sh
 
-# 38 12 24 12 sat /opt/scripts/kipro-automation/record.sh
-# 35 14 24 12 sat /opt/scripts/kipro-automation/stop.sh
+35 16 23 12 sat /opt/scripts/kipro-automation/record.sh
+40 18 23 12 sat /opt/scripts/kipro-automation/stop.sh
 
-# 38 14 24 12 sat /opt/scripts/kipro-automation/record.sh
-# 35 16 24 12 sat /opt/scripts/kipro-automation/stop.sh
+# 35 18 23 12 sat /opt/scripts/kipro-automation/record.sh
+# 30 20 23 12 sat /opt/scripts/kipro-automation/stop.sh
 
-# 38 16 24 12 sat /opt/scripts/kipro-automation/record.sh
-# 35 18 24 12 sat /opt/scripts/kipro-automation/stop.sh
 
-# 38 18 24 12 sat /opt/scripts/kipro-automation/record.sh
-# 35 20 24 12 sat /opt/scripts/kipro-automation/stop.sh
+# Services on 2017-12-24 (Sunday - Eve)
 
-# 38 20 24 12 sat /opt/scripts/kipro-automation/record.sh
-# 35 22 24 12 sat /opt/scripts/kipro-automation/stop.sh
+# 38 10 24 12 sun /opt/scripts/kipro-automation/record.sh
+# 35 12 24 12 sun /opt/scripts/kipro-automation/stop.sh
 
-# 38 22 24 12 sat /opt/scripts/kipro-automation/record.sh
-# 40 00 25 12 sun /opt/scripts/kipro-automation/stop.sh
+# 38 12 24 12 sun /opt/scripts/kipro-automation/record.sh
+# 35 14 24 12 sun /opt/scripts/kipro-automation/stop.sh
+
+# 38 14 24 12 sun /opt/scripts/kipro-automation/record.sh
+# 35 16 24 12 sun /opt/scripts/kipro-automation/stop.sh
+
+# 38 16 24 12 sun /opt/scripts/kipro-automation/record.sh
+# 35 18 24 12 sun /opt/scripts/kipro-automation/stop.sh
+
+# 38 18 24 12 sun /opt/scripts/kipro-automation/record.sh
+# 35 20 24 12 sun /opt/scripts/kipro-automation/stop.sh
+
+# 38 20 24 12 sun /opt/scripts/kipro-automation/record.sh
+# 35 22 24 12 sun /opt/scripts/kipro-automation/stop.sh
+
+# 38 22 24 12 sun /opt/scripts/kipro-automation/record.sh
+# 40 00 25 12 mon /opt/scripts/kipro-automation/stop.sh
+
+#
+# Christmas Day, 2017
+#
+
+# 50 09 25 12 mon /opt/scripts/kipro-automation/record.sh
+# 10 11 25 12 mon /opt/scripts/kipro-automation/stop.sh
 
 
 ###
-### [end] Christmas Eve services
+### [end] Christmas services
 ###
 #######
 
@@ -249,17 +256,6 @@
 
 # 15 18 * * sun /opt/scripts/kipro-automation/record.sh
 # 00 20 * * sun /opt/scripts/kipro-automation/stop.sh
-
-
-
-# Christmas Day, 2016
-#
-# conflicts with normal
-# Weekend Worhip KiPro schedules
-# so it's down here.
-
-# 50 09 25 12 sun /opt/scripts/kipro-automation/record.sh
-# 10 11 25 12 sun /opt/scripts/kipro-automation/stop.sh
 
 
 
