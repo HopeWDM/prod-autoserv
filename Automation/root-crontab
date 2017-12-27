@@ -60,8 +60,8 @@
 
 
 ## Saturday services
-#50 16 * * sat /opt/scripts/kipro-automation/record.sh
-#23 18 * * sat /opt/scripts/kipro-automation/stop.sh
+50 16 * * sat /opt/scripts/kipro-automation/record.sh
+23 18 * * sat /opt/scripts/kipro-automation/stop.sh
 
 
 
@@ -94,17 +94,17 @@
 
 # Services on 2017-12-22 (Friday - Eve Eve Eve)
 
-35 16 22 12 fri /opt/scripts/kipro-automation/record.sh
-40 18 22 12 fri /opt/scripts/kipro-automation/stop.sh
+# 35 16 22 12 fri /opt/scripts/kipro-automation/record.sh
+# 40 18 22 12 fri /opt/scripts/kipro-automation/stop.sh
 
 
 # Services on 2017-12-23 (Saturday - Eve Eve)
 
-35 14 23 12 sat /opt/scripts/kipro-automation/record.sh
-40 16 23 12 sat /opt/scripts/kipro-automation/stop.sh
+# 35 14 23 12 sat /opt/scripts/kipro-automation/record.sh
+# 40 16 23 12 sat /opt/scripts/kipro-automation/stop.sh
 
-35 16 23 12 sat /opt/scripts/kipro-automation/record.sh
-40 18 23 12 sat /opt/scripts/kipro-automation/stop.sh
+# 35 16 23 12 sat /opt/scripts/kipro-automation/record.sh
+# 40 18 23 12 sat /opt/scripts/kipro-automation/stop.sh
 
 # 35 18 23 12 sat /opt/scripts/kipro-automation/record.sh
 # 30 20 23 12 sat /opt/scripts/kipro-automation/stop.sh
