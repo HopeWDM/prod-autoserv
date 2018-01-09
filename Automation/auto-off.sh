@@ -8,19 +8,23 @@
 # -----
 
 # mainLeft / Panasonic
-wget -o /dev/null -O /dev/null "http://10.40.30.81/cgi-bin/cgi.pl?cmd=%02POF%03"
+wget -o /dev/null -O /dev/null "http://10.40.30.81/cgi-bin/raw.pl?cmd=%02POF%03"
 
 # mainRight / Panasonic
-wget -o /dev/null -O /dev/null "http://10.40.30.82/cgi-bin/cgi.pl?cmd=%02POF%03"
+wget -o /dev/null -O /dev/null "http://10.40.30.82/cgi-bin/raw.pl?cmd=%02POF%03"
 
 # Foldback Left / Sanyo
-wget -o /dev/null -O /dev/null "http://10.40.30.83/cgi-bin/cgi.pl?cmd=C01%0D"
+wget -o /dev/null -O /dev/null "http://10.40.30.83/cgi-bin/raw.pl?cmd=C01%0D"
 
 # Foldback Right / Sanyo
-wget -o /dev/null -O /dev/null "http://10.40.30.84/cgi-bin/cgi.pl?cmd=C01%0D"
+wget -o /dev/null -O /dev/null "http://10.40.30.84/cgi-bin/raw.pl?cmd=C01%0D"
 
 # centerCenter / Panasonic
-wget -o /dev/null -O /dev/null "http://10.40.30.95/cgi-bin/cgi.pl?cmd=%02POF%03"
+wget -o /dev/null -O /dev/null "http://10.40.30.95/cgi-bin/raw.pl?cmd=%02POF%03"
+
+# Video Control / LG Display
+wget -o /dev/null -O /dev/null "http://10.40.30.94/cgi-bin/cgi.pl?cmd=ka 0 0%0D"
+wget -o /dev/null -O /dev/null "http://10.40.30.109/cgi-bin/raw.pl?cmd=ka 0 0%0D"
 
 # -----
 # Bridge
