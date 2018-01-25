@@ -7,12 +7,18 @@ use Switch;
 # for use with "prod-autoserv".
 
 sub getData {
-        system('/opt/scripts/display-status/getter.sh');
+       system('/opt/scripts/display-status/getter.sh');
 }
 
-# 0. have "getter" get stuff, before this script runs
-# 1. Get variables ready
-# 2. Read everything in
+
+#***********************
+# ACTING AS ONE NOW THAT WE'VE GOT PITRONS
+#***********************
+#{
+	# 0. have "getter" get stuff, before this script runs
+	# 1. Get variables ready
+	# 2. Read everything in
+#}
 # 3. Make sure there's no %02 or %03
 # 4. Put it all in array @data
 # 5. Go line-by-line and grab statuses
@@ -39,6 +45,13 @@ our %chapel_mainSide;
 our %chapel_mainCenter;
 our %chapel_foldbackSide;
 our %gym_mainSide;
+our %wc_mainHL;
+our %wc_mainHR;
+our %wc_foldbackHL;
+our %wc_foldbackHR;
+our %wc_catwalk01;
+our %wc_catwalk02;
+our %wc_catwalk03;
 our %well_mainCenter;
 our %rm101A_mainCenter;
 our %rm101C_mainCenter;
@@ -51,7 +64,9 @@ our %rm216_mainCenter;
 our %rmRR1_mainCenter;
 our %rmXX_mainCenter;
 
-
+#***************************
+# THIS WHOLE FUNCTION SHOULD BE REPLACED WITH SOMETHING THAT READS DIRECTLY ???
+#***************************
 sub doFileRead() {
                 open (my $fh, "<", "/opt/data/projstatus/dumpstatus.txt")
                                 or die "Failed to open file $!\n";
@@ -71,7 +86,9 @@ sub doFileRead() {
                 }
 }
 
-
+#*****************************
+# NO NEED TO PARSE LINES IF YOU'RE ONLY GRABBING WHAT YOU NEED ???
+#*****************************
 sub lineByLine() {
         my $x;
         foreach $x (@data) {
@@ -83,6 +100,13 @@ sub lineByLine() {
                 if ($x =~ m/chapel_mainCenter/) { %chapel_mainCenter = parseLine($x); }
                 if ($x =~ m/chapel_foldbackSide/) { %chapel_foldbackSide = parseLine($x); }
                 if ($x =~ m/gym_mainSide/) { %gym_mainSide = parseLine($x); }
+                if ($x =~ m/wc_mainHL/) { %wc_mainHL = parseLine($x); }
+                if ($x =~ m/wc_mainHR/) { %wc_mainHR = parseLine($x); }
+                if ($x =~ m/wc_foldbackHL/) { %wc_foldbackHL = parseLine($x); }
+                if ($x =~ m/wc_foldbackHR/) { %wc_foldbackHR = parseLine($x); }
+                if ($x =~ m/wc_catwalk01/) { %wc_catwalk01 = parseLine($x); }
+                if ($x =~ m/wc_catwalk02/) { %wc_catwalk02 = parseLine($x); }
+                if ($x =~ m/wc_catwalk03/) { %wc_catwalk03 = parseLine($x); }
                 if ($x =~ m/well_mainCenter/) { %well_mainCenter = parseLine($x); }
                 if ($x =~ m/rm101A_mainCenter/) { %rm101A_mainCenter = parseLine($x); }
                 if ($x =~ m/rm101C_mainCenter/) { %rm101C_mainCenter = parseLine($x); }
@@ -139,7 +163,7 @@ sub parseLine {
                                                         $power = 'in-between';
                                                 }
                                                 else {
-                                                        $power = 'some sort of error has occured';
+                                                        $power = 'some sort of error has occured '.$value;
                                                         #errorWrapper($power);
                                                 }
                                         }
@@ -288,12 +312,12 @@ sub printer {
         print 'bridge_foldbackCenter_hours = ';
         printStuff(
                 $bridge_foldbackCenter{$h1}
-                .$cs.
-                $bridge_foldbackCenter{$h2}
-#               .$cs.
-#               $bridge_foldbackCenter{$h3}
-#               .$cs.
-#               $bridge_foldbackCenter{$h4}
+#		.$cs.
+#		$bridge_foldbackCenter{$h2}
+#		.$cs.
+#		$bridge_foldbackCenter{$h3}
+#		.$cs.
+#		$bridge_foldbackCenter{$h4}
         );
 
         print 'chapel_mainSide_power = ';
@@ -359,6 +383,97 @@ sub printer {
 #               $well_mainCenter{$h3}
 #               .$cs.
 #               $well_mainCenter{$h4}
+        );
+
+        print 'wc_mainHL_power = ';
+        printStuff($wc_mainHL{'power'});
+        print 'wc_mainHL_hours = ';
+        printStuff(
+		$wc_mainHL{$h1}
+		.$cs.
+		$wc_mainHL{$h2}
+#               .$cs.
+#               $wc_mainHL{$h3}
+#               .$cs.
+#               $wc_mainHL{$h4}
+        );
+
+        print 'wc_mainHR_power = ';
+        printStuff($wc_mainHR{'power'});
+        print 'wc_mainHR_hours = ';
+        printStuff(
+		$wc_mainHR{$h1}
+		.$cs.
+		$wc_mainHR{$h2}
+#               .$cs.
+#               $wc_mainHR{$h3}
+#               .$cs.
+#               $wc_mainHR{$h4}
+        );
+
+        print 'wc_foldbackHL_power = ';
+        printStuff($wc_foldbackHL{'power'});
+        print 'wc_foldbackHL_hours = ';
+        printStuff(
+                $wc_foldbackHL{$h1}
+#               .$cs.
+#               $wc_foldbackHL{$h2}
+#               .$cs.
+#               $wc_foldbackHL{$h3}
+#               .$cs.
+#               $wc_foldbackHL{$h4}
+        );
+
+        print 'wc_foldbackHR_power = ';
+        printStuff($wc_foldbackHR{'power'});
+        print 'wc_foldbackHR_hours = ';
+        printStuff(
+                $wc_foldbackHR{$h1}
+#               .$cs.
+#               $wc_foldbackHR{$h2}
+#               .$cs.
+#               $wc_foldbackHR{$h3}
+#               .$cs.
+#               $wc_foldbackHR{$h4}
+        );
+
+        print 'wc_catwalk01_power = ';
+        printStuff($wc_catwalk01{'power'});
+        print 'wc_catwalk01_hours = ';
+        printStuff(
+                $wc_catwalk01{$h1}
+#               .$cs.
+#               $wc_catwalk01{$h2}
+#               .$cs.
+#               $wc_catwalk01{$h3}
+#               .$cs.
+#               $wc_catwalk01{$h4}
+        );
+
+        print 'wc_catwalk02_power = ';
+        printStuff($wc_catwalk02{'power'});
+        print 'wc_catwalk02_hours = ';
+        printStuff(
+               $wc_catwalk02{$h1}
+               .$cs.
+               $wc_catwalk02{$h2}
+               .$cs.
+               $wc_catwalk02{$h3}
+               .$cs.
+               $wc_catwalk02{$h4}
+        );
+
+        print 'wc_catwalk03_power = ';
+        printStuff($wc_catwalk03{'power'});
+        print 'wc_catwalk03_hours = ';
+        printStuff(
+                $wc_catwalk03{$h1}
+#               .$cs.
+#               $wc_catwalk03{$h2}
+#               .$cs.
+#               $wc_catwalk03{$h3}
+#               .$cs.
+#               $wc_catwalk03{$h4}
         );
 
         print 'rm101A_mainCenter_power = ';
