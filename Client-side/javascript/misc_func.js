@@ -103,7 +103,7 @@ function goForth() {
 }
 
 function doStuffOverAndOver() {
-	LoadMyJs('http://prod-autoserv.hopewdm.org/javascript-beta/status_vars.js');
+	LoadMyJs('http://prod-autoserv.hopewdm.org/javascript/status_vars.js');
 	readVars();
 	runThings();
 }
