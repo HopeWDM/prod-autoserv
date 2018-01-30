@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # location:
-# /opt/scripts/projector-automation/jc_tv_auto-on.sh
+# /opt/scripts/projector-automation/prayr_tv_auto-on.sh
 
 
 # -----
