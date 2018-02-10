@@ -14,10 +14,10 @@ wget -o /dev/null -O /dev/null "http://10.40.30.81/cgi-bin/raw.pl?cmd=%02POF%03"
 wget -o /dev/null -O /dev/null "http://10.40.30.82/cgi-bin/raw.pl?cmd=%02POF%03"
 
 # Foldback Left / Sanyo
-wget -o /dev/null -O /dev/null "http://10.40.30.83/cgi-bin/raw.pl?cmd=C01%0D"
+wget -o /dev/null -O /dev/null "http://10.40.30.83/cgi-bin/raw.pl?cmd=%02POF%03"
 
 # Foldback Right / Sanyo
-wget -o /dev/null -O /dev/null "http://10.40.30.84/cgi-bin/raw.pl?cmd=C01%0D"
+wget -o /dev/null -O /dev/null "http://10.40.30.84/cgi-bin/raw.pl?cmd=%02POF%03"
 
 # centerCenter / Panasonic
 wget -o /dev/null -O /dev/null "http://10.40.30.95/cgi-bin/raw.pl?cmd=%02POF%03"
