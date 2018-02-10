@@ -189,27 +189,27 @@
 
 
 # Manudy Thursday
-# 30 10 29 03 thu /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 45 11 29 03 thu /opt/scripts/kipro-automation/record.sh
-# 20 13 29 03 thu /opt/scripts/kipro-automation/stop.sh
+# 30 10 29 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+# 45 11 29 03 * /opt/scripts/kipro-automation/record.sh
+# 20 13 29 03 * /opt/scripts/kipro-automation/stop.sh
 
-# 00 17 29 03 thu /opt/scripts/kipro-automation/record.sh
-# 35 18 29 03 thu /opt/scripts/kipro-automation/stop.sh
+# 00 17 29 03 * /opt/scripts/kipro-automation/record.sh
+# 35 18 29 03 * /opt/scripts/kipro-automation/stop.sh
 
-# 45 18 29 03 thu /opt/scripts/kipro-automation/record.sh
-# 20 20 29 03 thu /opt/scripts/kipro-automation/stop.sh
+# 45 18 29 03 * /opt/scripts/kipro-automation/record.sh
+# 20 20 29 03 * /opt/scripts/kipro-automation/stop.sh
 
 
 # Good Friday
-# 30 10 30 03 fri /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 45 11 30 03 fri /opt/scripts/kipro-automation/record.sh
-# 20 13 30 03 fri /opt/scripts/kipro-automation/stop.sh
+# 30 10 30 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+# 45 11 30 03 * /opt/scripts/kipro-automation/record.sh
+# 20 13 30 03 * /opt/scripts/kipro-automation/stop.sh
 
-# 00 17 30 03 fri /opt/scripts/kipro-automation/record.sh
-# 35 18 30 03 fri /opt/scripts/kipro-automation/stop.sh
+# 00 17 30 03 * /opt/scripts/kipro-automation/record.sh
+# 35 18 30 03 * /opt/scripts/kipro-automation/stop.sh
 
-# 45 18 30 03 fri /opt/scripts/kipro-automation/record.sh
-# 20 20 30 03 fri /opt/scripts/kipro-automation/stop.sh
+# 45 18 30 03 * /opt/scripts/kipro-automation/record.sh
+# 20 20 30 03 * /opt/scripts/kipro-automation/stop.sh
 
 
 # Easter Eve
