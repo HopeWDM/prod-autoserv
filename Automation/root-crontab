@@ -96,51 +96,51 @@
 
 # Services on 2017-12-22 (Friday - Eve Eve Eve)
 
-# 35 16 22 12 fri /opt/scripts/kipro-automation/record.sh
-# 40 18 22 12 fri /opt/scripts/kipro-automation/stop.sh
+# 35 16 22 12 * /opt/scripts/kipro-automation/record.sh
+# 40 18 22 12 * /opt/scripts/kipro-automation/stop.sh
 
 
 # Services on 2017-12-23 (Saturday - Eve Eve)
 
-# 35 14 23 12 sat /opt/scripts/kipro-automation/record.sh
-# 40 16 23 12 sat /opt/scripts/kipro-automation/stop.sh
+# 35 14 23 12 * /opt/scripts/kipro-automation/record.sh
+# 40 16 23 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 35 16 23 12 sat /opt/scripts/kipro-automation/record.sh
-# 40 18 23 12 sat /opt/scripts/kipro-automation/stop.sh
+# 35 16 23 12 * /opt/scripts/kipro-automation/record.sh
+# 40 18 23 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 35 18 23 12 sat /opt/scripts/kipro-automation/record.sh
-# 30 20 23 12 sat /opt/scripts/kipro-automation/stop.sh
+# 35 18 23 12 * /opt/scripts/kipro-automation/record.sh
+# 30 20 23 12 * /opt/scripts/kipro-automation/stop.sh
 
 
 # Services on 2017-12-24 (Sunday - Eve)
 
-# 38 10 24 12 sun /opt/scripts/kipro-automation/record.sh
-# 35 12 24 12 sun /opt/scripts/kipro-automation/stop.sh
+# 38 10 24 12 * /opt/scripts/kipro-automation/record.sh
+# 35 12 24 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 38 12 24 12 sun /opt/scripts/kipro-automation/record.sh
-# 35 14 24 12 sun /opt/scripts/kipro-automation/stop.sh
+# 38 12 24 12 * /opt/scripts/kipro-automation/record.sh
+# 35 14 24 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 38 14 24 12 sun /opt/scripts/kipro-automation/record.sh
-# 35 16 24 12 sun /opt/scripts/kipro-automation/stop.sh
+# 38 14 24 12 * /opt/scripts/kipro-automation/record.sh
+# 35 16 24 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 38 16 24 12 sun /opt/scripts/kipro-automation/record.sh
-# 35 18 24 12 sun /opt/scripts/kipro-automation/stop.sh
+# 38 16 24 12 * /opt/scripts/kipro-automation/record.sh
+# 35 18 24 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 38 18 24 12 sun /opt/scripts/kipro-automation/record.sh
-# 35 20 24 12 sun /opt/scripts/kipro-automation/stop.sh
+# 38 18 24 12 * /opt/scripts/kipro-automation/record.sh
+# 35 20 24 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 38 20 24 12 sun /opt/scripts/kipro-automation/record.sh
-# 35 22 24 12 sun /opt/scripts/kipro-automation/stop.sh
+# 38 20 24 12 * /opt/scripts/kipro-automation/record.sh
+# 35 22 24 12 * /opt/scripts/kipro-automation/stop.sh
 
-# 38 22 24 12 sun /opt/scripts/kipro-automation/record.sh
-# 40 00 25 12 mon /opt/scripts/kipro-automation/stop.sh
+# 38 22 24 12 * /opt/scripts/kipro-automation/record.sh
+# 40 00 25 12 * /opt/scripts/kipro-automation/stop.sh
 
 #
 # Christmas Day, 2017
 #
 
-# 50 09 25 12 mon /opt/scripts/kipro-automation/record.sh
-# 10 11 25 12 mon /opt/scripts/kipro-automation/stop.sh
+# 50 09 25 12 * /opt/scripts/kipro-automation/record.sh
+# 10 11 25 12 * /opt/scripts/kipro-automation/stop.sh
 
 
 ###
@@ -177,15 +177,15 @@
 
 
 # Ash Wednesday
-30 10 14 02 wed /opt/scripts/display-automation/prayr_tv_auto-on.sh
-45 11 14 02 wed /opt/scripts/kipro-automation/record.sh
-20 13 14 02 wed /opt/scripts/kipro-automation/stop.sh
+30 10 14 02 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+45 11 14 02 * /opt/scripts/kipro-automation/record.sh
+20 13 14 02 * /opt/scripts/kipro-automation/stop.sh
 
-00 17 14 02 wed /opt/scripts/kipro-automation/record.sh
-35 18 14 02 wed /opt/scripts/kipro-automation/stop.sh
+00 17 14 02 * /opt/scripts/kipro-automation/record.sh
+35 18 14 02 * /opt/scripts/kipro-automation/stop.sh
 
-45 18 14 02 wed /opt/scripts/kipro-automation/record.sh
-20 20 14 02 wed /opt/scripts/kipro-automation/stop.sh
+45 18 14 02 * /opt/scripts/kipro-automation/record.sh
+20 20 14 02 * /opt/scripts/kipro-automation/stop.sh
 
 
 # Manudy Thursday
@@ -213,36 +213,36 @@
 
 
 # Easter Eve
-# 30 10 31 03 sat /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 40 12 31 03 sat /opt/scripts/kipro-automation/record.sh
-# 38 14 31 03 sat /opt/scripts/kipro-automation/stop.sh
+# 30 10 31 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+# 40 12 31 03 * /opt/scripts/kipro-automation/record.sh
+# 38 14 31 03 * /opt/scripts/kipro-automation/stop.sh
 
-# 40 14 31 03 sat /opt/scripts/kipro-automation/record.sh
-# 38 16 31 03 sat /opt/scripts/kipro-automation/stop.sh
+# 40 14 31 03 * /opt/scripts/kipro-automation/record.sh
+# 38 16 31 03 * /opt/scripts/kipro-automation/stop.sh
 
-# 40 16 31 03 sat /opt/scripts/kipro-automation/record.sh
-# 38 18 31 03 sat /opt/scripts/kipro-automation/stop.sh
+# 40 16 31 03 * /opt/scripts/kipro-automation/record.sh
+# 38 18 31 03 * /opt/scripts/kipro-automation/stop.sh
 
-# 40 18 31 03 sat /opt/scripts/kipro-automation/record.sh
-# 38 20 31 03 sat /opt/scripts/kipro-automation/stop.sh
+# 40 18 31 03 * /opt/scripts/kipro-automation/record.sh
+# 38 20 31 03 * /opt/scripts/kipro-automation/stop.sh
 
 
 # Easter
-# 30 04 01 04 sun /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 40 06 01 04 sun /opt/scripts/kipro-automation/record.sh
-# 38 08 01 04 sun /opt/scripts/kipro-automation/stop.sh
+# 30 04 01 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+# 40 06 01 04 * /opt/scripts/kipro-automation/record.sh
+# 38 08 01 04 * /opt/scripts/kipro-automation/stop.sh
 
-# 40 08 01 04 sun /opt/scripts/kipro-automation/record.sh
-# 38 10 01 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 08 01 04 * /opt/scripts/kipro-automation/record.sh
+# 38 10 01 04 * /opt/scripts/kipro-automation/stop.sh
 
-# 40 10 01 04 sun /opt/scripts/kipro-automation/record.sh
-# 38 12 01 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 10 01 04 * /opt/scripts/kipro-automation/record.sh
+# 38 12 01 04 * /opt/scripts/kipro-automation/stop.sh
 
-# 40 14 01 04 sun /opt/scripts/kipro-automation/record.sh
-# 38 16 01 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 14 01 04 * /opt/scripts/kipro-automation/record.sh
+# 38 16 01 04 * /opt/scripts/kipro-automation/stop.sh
 
-# 40 16 01 04 sun /opt/scripts/kipro-automation/record.sh
-# 38 18 01 04 sun /opt/scripts/kipro-automation/stop.sh
+# 40 16 01 04 * /opt/scripts/kipro-automation/record.sh
+# 38 18 01 04 * /opt/scripts/kipro-automation/stop.sh
 
 
 
