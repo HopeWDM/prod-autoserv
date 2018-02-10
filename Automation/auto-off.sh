@@ -13,14 +13,14 @@ wget -o /dev/null -O /dev/null "http://10.40.30.81/cgi-bin/raw.pl?cmd=%02POF%03"
 # mainRight / Panasonic
 wget -o /dev/null -O /dev/null "http://10.40.30.82/cgi-bin/raw.pl?cmd=%02POF%03"
 
-# Foldback Left / Sanyo
+# Foldback Left / Panasonic
 wget -o /dev/null -O /dev/null "http://10.40.30.83/cgi-bin/raw.pl?cmd=%02POF%03"
 
-# Foldback Right / Sanyo
+# Foldback Right / Panasonic
 wget -o /dev/null -O /dev/null "http://10.40.30.84/cgi-bin/raw.pl?cmd=%02POF%03"
 
-# centerCenter / Panasonic
-wget -o /dev/null -O /dev/null "http://10.40.30.95/cgi-bin/raw.pl?cmd=%02POF%03"
+# centerCenter / Sanyo
+wget -o /dev/null -O /dev/null "http://10.40.30.95/cgi-bin/raw.pl?cmd=C01%0D"
 
 # Video Control / LG Display
 wget -o /dev/null -O /dev/null "http://10.40.30.94/cgi-bin/raw.pl?cmd=ka 0 0%0D"
