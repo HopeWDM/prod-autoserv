@@ -27,6 +27,8 @@ wget -o /dev/null -O /dev/null "http://10.40.30.91/cgi-bin/cgi.pl?cmd=ka%200%200
 wget -o /dev/null -O /dev/null "http://10.40.30.92/cgi-bin/cgi.pl?cmd=ka%200%2001%0D"
 # Bookstore Menu TVs / 
 wget -o /dev/null -O /dev/null "http://10.40.30.110/cgi-bin/raw.pl?cmd=ka%200%2001%0D"
+# GS Bulkhead TVs / 
+wget -o /dev/null -O /dev/null "http://10.40.30.118/cgi-bin/raw.pl?cmd=ka%200%2001%0D"
 # Pillar TVs
 wget -o /dev/null -O /dev/null "http://10.40.30.97/cgi-bin/raw.pl?cmd=POWR%20%20%201%0D"
 sleep 7s
@@ -55,6 +57,8 @@ wget -o /dev/null -O /dev/null "http://10.40.30.91/cgi-bin/cgi.pl?cmd=xb%200%209
 wget -o /dev/null -O /dev/null "http://10.40.30.92/cgi-bin/cgi.pl?cmd=xb%200%2090%0D"
 # Bookstore Menu TVs HDMI2/ 
 wget -o /dev/null -O /dev/null "http://10.40.30.110/cgi-bin/raw.pl?cmd=xb%200%2091%0D"
+# GS Bulkhead TVs HDMI2/ 
+wget -o /dev/null -O /dev/null "http://10.40.30.118/cgi-bin/raw.pl?cmd=xb%200%2091%0D"
 sleep 1s
 
 
@@ -81,7 +85,8 @@ wget -o /dev/null -O /dev/null "http://10.40.30.91/cgi-bin/cgi.pl?cmd=kf%200%200
 wget -o /dev/null -O /dev/null "http://10.40.30.92/cgi-bin/cgi.pl?cmd=kf%200%2000%0D"
 # Bookstore Menu TVs / 
 wget -o /dev/null -O /dev/null "http://10.40.30.110/cgi-bin/raw.pl?cmd=kf%200%2000%0D"
-
+# GS Bulkhead TVs / 
+wget -o /dev/null -O /dev/null "http://10.40.30.118/cgi-bin/raw.pl?cmd=kf%200%2000%0D"
 
 
 
