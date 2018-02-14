@@ -28,6 +28,8 @@ wget -o /dev/null -O /dev/null "http://10.40.30.91/cgi-bin/cgi.pl?cmd=ka%200%200
 wget -o /dev/null -O /dev/null "http://10.40.30.92/cgi-bin/cgi.pl?cmd=ka%200%200%0D"
 # Bookstore Menu TVs /
 wget -o /dev/null -O /dev/null "http://10.40.30.110/cgi-bin/raw.pl?cmd=ka%200%200%0D"
+# GS Bulkheads /
+wget -o /dev/null -O /dev/null "http://10.40.30.118/cgi-bin/raw.pl?cmd=ka%200%200%0D"
 # Pillar TVs off /
 wget -o /dev/null -O /dev/null "http://10.40.30.97/cgi-bin/raw.pl?cmd=POWR%20%20%200%0D"
 # Jordan Creek Prayer TV off /
