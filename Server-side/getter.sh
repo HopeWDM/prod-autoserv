@@ -69,10 +69,10 @@ echo wc_foldbackHL,$sanyo_lamps\
 	`curl $wcFoldbackHL$sanyoLAMPS` >> wcProjs.txt
 
 # WC Foldback House Right
-echo wc_foldbackHR,$sanyo_power\
-	`curl $wcFoldbackHR$sanyoPWR` >> wcProjs.txt
-echo wc_foldbackHR,$sanyo_lamps\
-	`curl $wcFoldbackHR$sanyoLAMPS` >> wcProjs.txt
+echo wc_foldbackHR,$panasonic_power\
+	`curl $wcFoldbackHR$panasonicPWR` >> wcProjs.txt
+echo wc_foldbackHR,$panasonic_lamps\
+	`curl $wcFoldbackHR$panasonicLAMPS` >> wcProjs.txt
 
 
 # strip some of the goofy characters at
