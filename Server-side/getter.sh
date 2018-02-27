@@ -63,10 +63,10 @@ echo wc_mainHR,$panasonic_lamps\
 	`curl $wcMainHR$panasonicLAMP2` >> wcProjs.txt
 
 # WC Foldback House Left
-echo wc_foldbackHL,$sanyo_power\
-	`curl $wcFoldbackHL$sanyoPWR` >> wcProjs.txt
-echo wc_foldbackHL,$sanyo_lamps\
-	`curl $wcFoldbackHL$sanyoLAMPS` >> wcProjs.txt
+echo wc_foldbackHL,$panasonic_power\
+	`curl $wcFoldbackHL$panasonicPWR` >> wcProjs.txt
+echo wc_foldbackHL,$panasonic_lamps\
+	`curl $wcFoldbackHL$panasonicLAMPS` >> wcProjs.txt
 
 # WC Foldback House Right
 echo wc_foldbackHR,$panasonic_power\
