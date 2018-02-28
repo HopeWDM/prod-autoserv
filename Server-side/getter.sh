@@ -25,8 +25,11 @@ panasonicLAMP4='%02Q$L:4%03'
 
 wcMainHL='http://10.40.30.81/cgi-bin/raw.pl?cmd='
 wcMainHR='http://10.40.30.82/cgi-bin/raw.pl?cmd='
-wcFoldbackHL='http://10.40.30.83/cgi-bin/foldback.pl?cmd='
-wcFoldbackHR='http://10.40.30.84/cgi-bin/foldback.pl?cmd='
+wcCatwalk02='http://10.40.30.95/cgi-bin/raw.pl?cmd='
+#wcFoldbackHL='http://10.40.30.83/cgi-bin/foldback.pl?cmd='
+#wcFoldbackHR='http://10.40.30.84/cgi-bin/foldback.pl?cmd='
+wcFoldbackHL='http://10.40.30.83/cgi-bin/raw.pl?cmd='
+wcFoldbackHR='http://10.40.30.84/cgi-bin/raw.pl?cmd='
 
 wget -O bridge-raw.txt http://10.40.30.75/bridge_status.html
 wget -O chapel-raw.txt http://10.40.30.70/chapel_status.html
@@ -50,29 +53,35 @@ echo '' > wcProjs.txt
 
 # WC Main House Left
 echo wc_mainHL,$panasonic_power\
-	`curl $wcMainHL$panasonicPWR` >> wcProjs.txt
+		`curl $wcMainHL$panasonicPWR` >> wcProjs.txt
 echo wc_mainHL,$panasonic_lamps\
-	`curl $wcMainHL$panasonicLAMP1`\
-	`curl $wcMainHL$panasonicLAMP2` >> wcProjs.txt
+		`curl $wcMainHL$panasonicLAMP1`\
+		`curl $wcMainHL$panasonicLAMP2` >> wcProjs.txt
 
 # WC Main House Right
 echo wc_mainHR,$panasonic_power\
-	`curl $wcMainHR$panasonicPWR` >> wcProjs.txt
+		`curl $wcMainHR$panasonicPWR` >> wcProjs.txt
 echo wc_mainHR,$panasonic_lamps\
-	`curl $wcMainHR$panasonicLAMP1`\
-	`curl $wcMainHR$panasonicLAMP2` >> wcProjs.txt
+		`curl $wcMainHR$panasonicLAMP1`\
+		`curl $wcMainHR$panasonicLAMP2` >> wcProjs.txt
+
+# WC Catwalk 02
+echo wc_catwalk02,$sanyo_power\
+		`curl $wcCatwalk02$sanyoPWR` >> wcProjs.txt
+echo wc_catwalk02,$sanyo_lamps\
+		`curl $wcCatwalk02$sanyoLAMPS` >> wcProjs.txt
 
 # WC Foldback House Left
 echo wc_foldbackHL,$panasonic_power\
-	`curl $wcFoldbackHL$panasonicPWR` >> wcProjs.txt
+		`curl $wcFoldbackHL$panasonicPWR` >> wcProjs.txt
 echo wc_foldbackHL,$panasonic_lamps\
-	`curl $wcFoldbackHL$panasonicLAMPS` >> wcProjs.txt
+		`curl $wcFoldbackHL$panasonicLAMP1` >> wcProjs.txt
 
 # WC Foldback House Right
 echo wc_foldbackHR,$panasonic_power\
-	`curl $wcFoldbackHR$panasonicPWR` >> wcProjs.txt
+		`curl $wcFoldbackHR$panasonicPWR` >> wcProjs.txt
 echo wc_foldbackHR,$panasonic_lamps\
-	`curl $wcFoldbackHR$panasonicLAMPS` >> wcProjs.txt
+		`curl $wcFoldbackHR$panasonicLAMP1` >> wcProjs.txt
 
 
 # strip some of the goofy characters at
