@@ -41,227 +41,24 @@
 00 06 * * * /opt/scripts/display-automation/tv_auto-on.sh
 ## ------------------------------
 
-
-
-
-
-## Wednesday PowerLife
-50 17 * * wed /opt/scripts/kipro-automation/record.sh
-15 20 * * wed /opt/scripts/kipro-automation/stop.sh
-
-## Wednesday Ignition
-18 20 * * wed /opt/scripts/kipro-automation/record.sh
-30 21 * * wed /opt/scripts/kipro-automation/stop.sh
-
-## Thursday CR
-25 18 * * thu /opt/scripts/kipro-automation/record.sh
-45 19 * * thu /opt/scripts/kipro-automation/stop.sh
-
-
-
 ## Saturday services
 00 15 * * sat /opt/scripts/display-automation/prayr_tv_auto-on.sh
-50 16 * * sat /opt/scripts/kipro-automation/record.sh
-23 18 * * sat /opt/scripts/kipro-automation/stop.sh
-
-
 
 ## Sunday services
 00 06 * * sun /opt/scripts/display-automation/prayr_tv_auto-on.sh
-35 07 * * sun /opt/scripts/kipro-automation/record.sh
-02 09 * * sun /opt/scripts/kipro-automation/stop.sh
-
-08 09 * * sun /opt/scripts/kipro-automation/record.sh
-45 10 * * sun /opt/scripts/kipro-automation/stop.sh
-
-53 10 * * sun /opt/scripts/kipro-automation/record.sh
-30 12 * * sun /opt/scripts/kipro-automation/stop.sh
-
-50 16 * * sun /opt/scripts/kipro-automation/record.sh
-22 18 * * sun /opt/scripts/kipro-automation/stop.sh
-
-
-
-
-# Crontab for KiPro for one-off events
-#
-# m h  dom mon dow   command
-
-### START OF ONE-OFF EVENTS
-
-#######
-###
-### Christmas services
-###
-
-# Services on 2017-12-22 (Friday - Eve Eve Eve)
-
-# 35 16 22 12 * /opt/scripts/kipro-automation/record.sh
-# 40 18 22 12 * /opt/scripts/kipro-automation/stop.sh
-
-
-# Services on 2017-12-23 (Saturday - Eve Eve)
-
-# 35 14 23 12 * /opt/scripts/kipro-automation/record.sh
-# 40 16 23 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 35 16 23 12 * /opt/scripts/kipro-automation/record.sh
-# 40 18 23 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 35 18 23 12 * /opt/scripts/kipro-automation/record.sh
-# 30 20 23 12 * /opt/scripts/kipro-automation/stop.sh
-
-
-# Services on 2017-12-24 (Sunday - Eve)
-
-# 38 10 24 12 * /opt/scripts/kipro-automation/record.sh
-# 35 12 24 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 38 12 24 12 * /opt/scripts/kipro-automation/record.sh
-# 35 14 24 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 38 14 24 12 * /opt/scripts/kipro-automation/record.sh
-# 35 16 24 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 38 16 24 12 * /opt/scripts/kipro-automation/record.sh
-# 35 18 24 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 38 18 24 12 * /opt/scripts/kipro-automation/record.sh
-# 35 20 24 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 38 20 24 12 * /opt/scripts/kipro-automation/record.sh
-# 35 22 24 12 * /opt/scripts/kipro-automation/stop.sh
-
-# 38 22 24 12 * /opt/scripts/kipro-automation/record.sh
-# 40 00 25 12 * /opt/scripts/kipro-automation/stop.sh
-
-#
-# Christmas Day, 2017
-#
-
-# 50 09 25 12 * /opt/scripts/kipro-automation/record.sh
-# 10 11 25 12 * /opt/scripts/kipro-automation/stop.sh
-
-
-###
-### [end] Christmas services
-###
-#######
-
-# HopeVBS - enable as necessary
-
-
-# VBS - Morning Opening
-# 55 08 * * mon-fri /opt/scripts/kipro-automation/record.sh
-# 00 10 * * mon-fri /opt/scripts/kipro-automation/stop.sh
-
-# VBS - Morning Closing
-# 30 11 * * mon-fri /opt/scripts/kipro-automation/record.sh
-# 30 12 * * mon-fri /opt/scripts/kipro-automation/stop.sh
-
-# VBS - Evening Opening
-# 05 18 * * mon-fri /opt/scripts/kipro-automation/record.sh
-# 45 18 * * mon-fri /opt/scripts/kipro-automation/stop.sh
-
-# VBS - Evening Closing
-# 45 19 * * mon-fri /opt/scripts/kipro-automation/record.sh
-# 20 20 * * mon-fri /opt/scripts/kipro-automation/stop.sh
-
-
-
-
-#######
-###
-### Easter season services
-###
-
 
 # Ash Wednesday
-30 10 14 02 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
-45 11 14 02 * /opt/scripts/kipro-automation/record.sh
-20 13 14 02 * /opt/scripts/kipro-automation/stop.sh
-
-00 17 14 02 * /opt/scripts/kipro-automation/record.sh
-35 18 14 02 * /opt/scripts/kipro-automation/stop.sh
-
-45 18 14 02 * /opt/scripts/kipro-automation/record.sh
-20 20 14 02 * /opt/scripts/kipro-automation/stop.sh
-
+# 30 10 20 02 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
 
 # Manudy Thursday
 # 30 10 29 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 45 11 29 03 * /opt/scripts/kipro-automation/record.sh
-# 20 13 29 03 * /opt/scripts/kipro-automation/stop.sh
-
-# 00 17 29 03 * /opt/scripts/kipro-automation/record.sh
-# 35 18 29 03 * /opt/scripts/kipro-automation/stop.sh
-
-# 45 18 29 03 * /opt/scripts/kipro-automation/record.sh
-# 20 20 29 03 * /opt/scripts/kipro-automation/stop.sh
-
 
 # Good Friday
 # 30 10 30 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 45 11 30 03 * /opt/scripts/kipro-automation/record.sh
-# 20 13 30 03 * /opt/scripts/kipro-automation/stop.sh
-
-# 00 17 30 03 * /opt/scripts/kipro-automation/record.sh
-# 35 18 30 03 * /opt/scripts/kipro-automation/stop.sh
-
-# 45 18 30 03 * /opt/scripts/kipro-automation/record.sh
-# 20 20 30 03 * /opt/scripts/kipro-automation/stop.sh
-
 
 # Easter Eve
 # 30 10 31 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 40 12 31 03 * /opt/scripts/kipro-automation/record.sh
-# 38 14 31 03 * /opt/scripts/kipro-automation/stop.sh
-
-# 40 14 31 03 * /opt/scripts/kipro-automation/record.sh
-# 38 16 31 03 * /opt/scripts/kipro-automation/stop.sh
-
-# 40 16 31 03 * /opt/scripts/kipro-automation/record.sh
-# 38 18 31 03 * /opt/scripts/kipro-automation/stop.sh
-
-# 40 18 31 03 * /opt/scripts/kipro-automation/record.sh
-# 38 20 31 03 * /opt/scripts/kipro-automation/stop.sh
-
 
 # Easter
-# 30 04 01 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
-# 40 06 01 04 * /opt/scripts/kipro-automation/record.sh
-# 38 08 01 04 * /opt/scripts/kipro-automation/stop.sh
-
-# 40 08 01 04 * /opt/scripts/kipro-automation/record.sh
-# 38 10 01 04 * /opt/scripts/kipro-automation/stop.sh
-
-# 40 10 01 04 * /opt/scripts/kipro-automation/record.sh
-# 38 12 01 04 * /opt/scripts/kipro-automation/stop.sh
-
-# 40 14 01 04 * /opt/scripts/kipro-automation/record.sh
-# 38 16 01 04 * /opt/scripts/kipro-automation/stop.sh
-
-# 40 16 01 04 * /opt/scripts/kipro-automation/record.sh
-# 38 18 01 04 * /opt/scripts/kipro-automation/stop.sh
-
-
-
-###
-### [end] Easter season services
-###
-#######
-
-
-
-### END OF PERMANENT ONE-OFF EVENTS
-
-
-# Alpha; needs enabled 2016-09-11
-# through 2016-11-13.
-
-# 15 18 * * sun /opt/scripts/kipro-automation/record.sh
-# 00 20 * * sun /opt/scripts/kipro-automation/stop.sh
-
-
-
-### END OF OTHER ONE-OFF EVENTS
+# 30 04 01 04 * /opt/scripts/display-automation/tv_auto-on.sh
+# 31 04 01 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
