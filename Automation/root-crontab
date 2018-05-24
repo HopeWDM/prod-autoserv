@@ -47,8 +47,11 @@
 ## Sunday services
 00 06 * * sun /opt/scripts/display-automation/prayr_tv_auto-on.sh
 
-# Ash Wednesday
-# 30 10 20 02 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+## BlackMagic Hyperdeck Mini Reformatter
+00 02 * * fri /opt/scripts/display-automation/hyperdeck-formatter.pl
+
+## Start of one off events
+## ------------------------------
 
 # Manudy Thursday
 # 30 10 29 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
