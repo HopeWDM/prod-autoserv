@@ -56,7 +56,7 @@
 # Ash Wednesday
 30 10 06 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
 
-# Manudy Thursday
+# Maundy Thursday
 30 10 18 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
 
 # Good Friday
