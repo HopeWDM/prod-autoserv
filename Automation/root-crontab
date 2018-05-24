@@ -53,15 +53,18 @@
 ## Start of one off events
 ## ------------------------------
 
+# Ash Wednesday
+30 10 06 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+
 # Manudy Thursday
-# 30 10 29 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+30 10 18 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
 
 # Good Friday
-# 30 10 30 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+30 10 19 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
 
 # Easter Eve
-# 30 10 31 03 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+30 10 20 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
 
 # Easter
-# 30 04 01 04 * /opt/scripts/display-automation/tv_auto-on.sh
-# 31 04 01 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
+30 04 21 04 * /opt/scripts/display-automation/tv_auto-on.sh
+31 04 21 04 * /opt/scripts/display-automation/prayr_tv_auto-on.sh
