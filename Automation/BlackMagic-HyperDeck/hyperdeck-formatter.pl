@@ -41,9 +41,9 @@ sub formatter {
 sub run_formats {
         formatter ($ip_addr_1, $pick_slot_1);
         sleep 20;
-        formatter ($ip_addr_1, $pick_slot_2);
-        sleep 20;
         formatter ($ip_addr_2, $pick_slot_1);
+        sleep 20;
+        formatter ($ip_addr_1, $pick_slot_2);
         sleep 20;
         formatter ($ip_addr_2, $pick_slot_2);
 }
