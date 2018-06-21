@@ -96,6 +96,6 @@ sed -i 's/, /,/g' wcProjs.txt
 # the status page to get the data.
 mv wcProjs.txt wc-raw.txt
 
-cat /opt/data/projstatus/*-raw.txt | grep , | sed s/'%02'//g | sed s/'%03'//g | sed s/'%0D'//g | sed s/'%0A'//g > dumpstatus.txt
+cat /opt/data/projstatus/*-raw.txt | grep , | sed s/'%02'//g | sed s/'%03'//g | sed s/'%0D'//g | sed s/'%0A'//g | sed s/'%00%00%00'//g > dumpstatus.txt
 #cat /opt/data/projstatus/*-raw.txt | grep , > dumpstatus.txt
 
