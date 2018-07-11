@@ -37,7 +37,7 @@ wget -o /dev/null -O /dev/null "http://10.40.30.75/file.html?cmd=W01RS|%02POF%03
 wget -o /dev/null -O /dev/null "http://10.40.30.75/file.html?cmd=W02RS|%02POF%03"
 
 # mainCenter / Sanyo
-wget -o /dev/null -O /dev/null "http://10.40.30.75/file.html?cmd=W03RS|%02POF%03"
+wget -o /dev/null -O /dev/null "http://10.40.30.75/file.html?cmd=W03RS|C01%0D"
 
 # foldbackCenter / Sanyo
 wget -o /dev/null -O /dev/null "http://10.40.30.75/file.html?cmd=W04RS|C01%0D"
