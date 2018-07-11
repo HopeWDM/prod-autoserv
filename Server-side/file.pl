@@ -301,10 +301,10 @@ sub printer {
                 $bridge_mainCenter{$h1}
                 .$cs.
                 $bridge_mainCenter{$h2}
-#                .$cs.
-#                $bridge_mainCenter{$h3}
-#                .$cs.
-#                $bridge_mainCenter{$h4}
+                .$cs.
+                $bridge_mainCenter{$h3}
+                .$cs.
+                $bridge_mainCenter{$h4}
         );
 
         print 'bridge_foldbackCenter_power = ';
